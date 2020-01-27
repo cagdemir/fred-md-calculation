@@ -1,12 +1,14 @@
 import pandas as pd
 import numpy as np
 import numpy as np
-from fredapi import Fred 
-fred = Fred(api_key='88848bbeb1c0043b779a1df8e1bd2c68')
+from fredapi import Fred
+
+api_key = '...'
+fred = Fred(api_key=api_key)
 
 
 
-ticker_tcoes_Rdata=pd.read_excel('/home/emre/Masaüstü/Replication of Fred-MD Python/ticker_tcodes_Rdata.xlsx')
+ticker_tcoes_Rdata=pd.read_excel(...)
 ticker=ticker_tcoes_Rdata.iloc[:,0]     #data tickers
 tcodes=ticker_tcoes_Rdata.iloc[:,1]     #transform codes
 raw_data.to_excel('/home/emre/Masaüstü/Replication of Fred-MD Python/raw_data.xlsx')
